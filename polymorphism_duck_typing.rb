@@ -16,12 +16,14 @@ class Fish
     end
 end
 
+def move(animal)
+    puts animal.movement
+end
 
 dog = Dog.new
-dog.movement
-
 bird = Bird.new
-bird.movement
-
 fish = Fish.new
-fish.movement
+
+move(dog)
+move(bird)
+move(fish)
