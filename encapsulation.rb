@@ -31,9 +31,9 @@ class BankAccount
     private
 
     def validate_amount(amount)
-        unless amount.positive?
+        if amount < 0
 
-        raise ArgumentError, "Amount must be a positive value"
+        puts "Amount must be a positive value."
         end
     end
 end
