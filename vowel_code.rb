@@ -49,3 +49,20 @@ decode("h2llo")
 decode("1ppl2")
 decode("b2rry")
 decode("h3 th2r2")
+
+def encode2(str)
+    vowel=["a","e","i","o","u"]
+    str_arr = str.split("")
+
+    str_arr.map! { |letter|
+        if(vowel.include?(letter))
+            vowel.find_index(letter)+1
+        else
+            letter
+        end
+        
+    }
+    puts str_arr.join()
+end
+
+encode2("hihihi")
